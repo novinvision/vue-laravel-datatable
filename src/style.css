@@ -1,0 +1,361 @@
+.dt-container {
+    position: relative;
+}
+
+.dt-container .dt-button-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 9;
+    border-radius: 1rem;
+}
+
+.dt-container .dtb-popover-close {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+    padding: 0;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.dt-container .dt-buttons,
+.dt-container .dt-buttons .btn-group {
+    position: unset;
+}
+
+.dt-container .selected .dtsp-nameColumn {
+    background-color: #eeeeee;
+}
+
+.datatable-wrapper .dt-processing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: block;
+    text-align: center;
+    padding: 80px;
+    z-index: 2;
+}
+
+div.dt-button-collection.dtb-collection-closeable div.dtsp-titleRow {
+    padding: 0 !important;
+}
+
+div.dtsp-topRow {
+    align-items: center;
+}
+
+.datatable .datatable-search-panes-collapse {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: all ease 0.3s;
+}
+
+.datatable .datatable-search-panes-collapse.show {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+}
+
+div.dtsp-panesContainer div.dtsp-searchPanes div.dtsp-searchPane {
+    font-size: inherit;
+}
+
+div.dtsp-topRow div.dtsp-subRow1 button.dtsp-searchIcon {
+    left: auto;
+    right: 0;
+}
+
+div.dtsp-panesContainer div.dtsp-searchPane div.dtsp-topRow button {
+    line-height: inherit;
+}
+
+div.dtsp-panesContainer div.dtsp-searchPane div.dtsp-topRow div.dtsp-subRow1 button {
+    border-right: 1px solid #ced4da !important;
+}
+
+.datatable-wrapper .dt-paging ul {
+    margin: 0 !important;
+}
+
+.datatable-wrapper .dt-search label,
+.datatable-wrapper .dt-length label {
+    display: none !important;
+}
+
+.datatable-wrapper .dt-search input {
+    border-radius: 1.5rem;
+}
+
+.datatable-wrapper .dtb-collection-closeable {
+    left: 0 !important;
+}
+
+.dataTable.clickable tr {
+    cursor: pointer;
+}
+
+.dataTable thead tr:not(.datatable-column-search-row) th {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+    white-space: nowrap;
+}
+
+.dataTable thead tr.datatable-column-search-row .form-control {
+    min-width: unset !important;
+    width: auto;
+}
+
+table.dataTable > thead > tr > th.dt-orderable-asc,
+table.dataTable > thead > tr > th.dt-orderable-desc {
+    padding-right: 30px !important;
+    position: relative;
+    cursor: pointer;
+}
+
+table.dataTable > thead > tr > th.dt-orderable-asc:before,
+table.dataTable > thead > tr > th.dt-orderable-asc:after,
+table.dataTable > thead > tr > th.dt-orderable-desc:before,
+table.dataTable > thead > tr > th.dt-orderable-desc:after {
+    position: absolute;
+}
+
+table.dataTable td.dtr-control:before,
+table.dataTable th.dtr-control:before {
+    cursor: pointer;
+    position: relative;
+    margin-left: 5px;
+}
+
+table.dataTable.collapsed td.dtr-control:before,
+table.dataTable.collapsed th.dtr-control:before,
+table.dataTable.datatable-selectable thead tr th:first-child .dt-column-title:before,
+table.dataTable.datatable-selectable td.dtr-control:after,
+table.dataTable.datatable-selectable th.dtr-control:after,
+.dt-container .dt-buttons .buttons-columnVisibility:before,
+table.dataTable > thead > tr > th.dt-orderable-asc:after,
+table.dataTable > thead > tr > th.dt-orderable-asc:before,
+table.dataTable > thead > tr > th.dt-orderable-asc:after,
+table.dataTable > thead > tr > th.dt-orderable-desc:before,
+table.dataTable > thead > tr > th.dt-orderable-desc:after {
+    font-family: "Font Awesome 6 Pro", serif;
+    font-weight: 900;
+    letter-spacing: normal;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    font-size: .8rem;
+}
+
+table.dataTable > thead > tr > th.dt-orderable-asc:before,
+table.dataTable > thead > tr > th.dt-orderable-asc:after,
+table.dataTable > thead > tr > th.dt-orderable-desc:before,
+table.dataTable > thead > tr > th.dt-orderable-desc:after {
+    right: 10px;
+    top: 17px;
+    opacity: .4;
+}
+
+table.dataTable > thead > tr > th.dt-orderable-desc:before {
+    content: "\f0de";
+}
+
+table.dataTable > thead > tr > th.dt-orderable-asc:after {
+    content: "\f0dd";
+}
+
+table.dataTable > thead > tr > th.dt-ordering-desc:before {
+    opacity: 1;
+}
+
+table.dataTable > thead > tr > th.dt-ordering-asc:after {
+    opacity: 1;
+}
+
+table.dataTable.collapsed td.dtr-control {
+    position: relative;
+    padding-top: 35px;
+}
+
+table.dataTable.collapsed td.dtr-control:before {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: #90A4AE;
+    padding: 1px 0 0 0;
+    font-size: .7rem;
+    color: #ffffff;
+    content: "\f067";
+    vertical-align: middle;
+    margin: 0;
+}
+
+table.dataTable.collapsed .dtr-expanded td.dtr-control:before {
+    background-color: #546E7A !important;
+    content: "\f068";
+}
+
+table.dataTable.datatable-selectable td.dtr-control:after {
+    content: "\f14a";
+    color: var(--bs-tertiary-color);
+}
+
+table.dataTable.datatable-selectable.datatable-selectable-multi thead tr th:first-child > input {
+    margin-right: 10px;
+    vertical-align: middle;
+    float: left;
+    margin-top: 5px;
+}
+
+table.dataTable.datatable-selectable td.dtr-control:after {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+
+table.dataTable.datatable-selectable td.dtr-control:after {
+    font-weight: 300;
+    content: "\f0c8";
+}
+
+table.dataTable.datatable-selectable .selected td.dtr-control:after {
+    color: var(--bs-body-color);
+    font-weight: 900;
+    content: "\f14a";
+}
+
+table.dataTable.datatable-selectable tbody tr.selected td {
+    background-color: #B3E5FC;
+}
+
+table.dataTable.datatable-selectable tr {
+    cursor: pointer;
+}
+
+table.dataTable td.child,
+table.dataTable tr.child {
+    --bs-table-color-state: var(--bs-emphasis-color, var(--bs-body-color, #000));
+    --bs-table-bg-state: transparent;
+}
+
+table.dataTable .dtr-details {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+table.dataTable .dtr-details li {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start !important;
+    border-radius: var(--bs-border-radius);
+    padding: 5px;
+}
+
+table.dataTable .dtr-details li:nth-child(odd) {
+    background-color: var(--bs-table-striped-bg);
+}
+
+table.dataTable .dtr-details .dtr-title:not(:empty) {
+    display: inline-block;
+    font-weight: bold;
+    min-width: 75px;
+    margin-right: 10px;
+}
+
+table.dataTable .dtr-details .dtr-title:not(:empty):after {
+    content: ":";
+}
+
+.dt-container .dt-buttons .buttons-columnVisibility:before {
+    margin-right: 10px;
+    content: "\f0c8";
+}
+
+.dt-container .dt-buttons .buttons-columnVisibility.dt-button-active:before {
+    font-weight: bold;
+    content: "\f14a";
+}
+
+div.dtsp-panesContainer div.dtsp-searchPane div.dtsp-topRow div.dtsp-subRow2 {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+div.dtsp-panesContainer div.dtsp-searchPane div.dtsp-topRow div.dtsp-subRow1 input {
+    padding-right: 10px;
+}
+
+div.dtsp-panesContainer div.dtsp-searchPanes div.dtsp-searchPane {
+    margin-top: 5px !important;
+}
+
+div.dtsp-searchPane div.dt-container div.dt-scroll-body div.dtsp-nameCont span.dtsp-name, div.dtsp-searchPane div.dt-container div.dataTables_scrollBody div.dtsp-nameCont span.dtsp-name, div.dtsp-searchPane div.dataTables_wrapper div.dt-scroll-body div.dtsp-nameCont span.dtsp-name, div.dtsp-searchPane div.dataTables_wrapper div.dataTables_scrollBody div.dtsp-nameCont span.dtsp-name {
+    text-align: start;
+}
+
+div.dtsp-searchPane div.dt-container div.dt-scroll {
+    width: 100%;
+}
+
+.datatable-btn-reload {
+    background-color: transparent;
+    color: var(--bs-secondary);
+    height: 40px;
+    width: 40px;
+}
+
+.dt-paging .pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.datatable .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    z-index: 9;
+    right: auto !important;
+}
+
+.datatable .dropdown-menu .dt-button.buttons-columnVisibility {
+    display: flex;
+    align-items: center;
+}
+
+.datatable .dropdown-menu .dt-button.buttons-columnVisibility:before {
+    opacity: 0.3;
+}
+
+.datatable .dropdown-menu .dt-button.buttons-columnVisibility.dt-button-active:before {
+    opacity: 1;
+}
+
+.datatable .dropdown-menu.dt-button-collection {
+    z-index: 999 !important;
+}
