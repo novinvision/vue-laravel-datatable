@@ -1,5 +1,5 @@
 {
-  "name": "vue-laravel-datatable",
+  "name": "vue3-laravel-datatable",
   "version": "1.0.0",
   "description": "yajra datatables for laravel with novinvision/laravel-datatable package",
   "type": "module",
