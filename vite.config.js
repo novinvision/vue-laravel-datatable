@@ -9,9 +9,12 @@ export default defineConfig({
         dts()
     ],
     resolve: {
-        alias: {
-            'datatables.net': path.resolve(__dirname, 'node_modules/datatables.net-bs5'),
-        },
+        alias: [
+            {
+                find: /^datatables\.net$/,
+                replacement: path.resolve(__dirname, 'node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs'),
+            },
+        ],
     },
     build: {
         lib: {
