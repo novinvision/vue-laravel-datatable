@@ -1,6 +1,6 @@
 {
   "name": "vue3-laravel-datatable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "yajra datatables for laravel with novinvision/laravel-datatable package",
   "type": "module",
   "types": "./dist/index.d.ts",
@@ -62,8 +62,8 @@
     "datatables.net-vue3": "^3.0.1"
   },
   "peerDependencies": {
-    "vue": "^3.0.0",
-    "@inertiajs/vue3": "^3.3.1"
+    "vue": ">3.0.0",
+    "@inertiajs/vue3": ">1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.4",
