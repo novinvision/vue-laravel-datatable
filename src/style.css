@@ -152,7 +152,7 @@ table.dataTable > thead > tr > th.dt-orderable-asc:before,
 table.dataTable > thead > tr > th.dt-orderable-asc:after,
 table.dataTable > thead > tr > th.dt-orderable-desc:before,
 table.dataTable > thead > tr > th.dt-orderable-desc:after {
-    font-family: "Font Awesome 6 Pro", serif;
+    font-family: var(--fa-family, var(--fa-style-family, '"Font Awesome 6 Pro", "Font Awesome 7 Pro", "Font Awesome 5 Pro", serif'));
     font-weight: 900;
     letter-spacing: normal;
     -moz-osx-font-smoothing: grayscale;
@@ -358,4 +358,49 @@ div.dtsp-searchPane div.dt-container div.dt-scroll {
 
 .datatable .dropdown-menu.dt-button-collection {
     z-index: 999 !important;
+}
+
+.datatable .datatable-btn-reload {
+    padding: 3px 0 0 0;
+}
+
+.datatable .form-control,
+.datatable .form-select{
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+}
+
+
+table.dataTable.datatable-rounded > thead > tr:first-child > th:last-child,
+table.dataTable.datatable-rounded > thead > tr:first-child > td:last-child.table.table-rounded > thead > tr:first-child > th:last-child,
+table.dataTable.datatable-rounded:not(:has(thead)) tbody > tr:first-child > td:last-child{
+    border-top-right-radius: var(--bs-border-radius, .1rem);
+}
+
+table.dataTable.datatable-rounded > thead > tr:first-child > th:first-child,
+table.dataTable.datatable-rounded > thead > tr:first-child > td:first-child,
+table.dataTable.datatable-rounded:not(:has(thead)) tbody > tr:first-child > td:first-child{
+    border-top-left-radius: var(--bs-border-radius, .1rem);
+}
+
+table.dataTable.datatable-rounded:not(:has(tfoot:not(:empty))) > tbody > tr:last-child > th:first-child,
+table.dataTable.datatable-rounded:not(:has(tfoot:not(:empty))) > tbody > tr:last-child > td:first-child,
+table.dataTable.datatable-rounded > tfoot > tr:last-child > th:first-child,
+table.dataTable.datatable-rounded > tfoot > tr:last-child > td:first-child {
+    border-bottom-left-radius: var(--bs-border-radius, .1rem);
+}
+
+table.dataTable.datatable-rounded:not(:has(tfoot:not(:empty))) > tbody > tr:last-child > th:last-child,
+table.dataTable.datatable-rounded:not(:has(tfoot:not(:empty))) > tbody > tr:last-child > td:last-child,
+table.dataTable.datatable-rounded > tfoot > tr:last-child > th:last-child,
+table.dataTable.datatable-rounded > tfoot > tr:last-child > td:last-child {
+    border-bottom-right-radius: var(--bs-border-radius, .1rem);
+}
+
+table.dataTable.datatable-rounded:not(:has(tfoot:not(:empty))) > tbody > tr:last-child > th,
+table.dataTable.datatable-rounded:not(:has(tfoot:not(:empty))) > tbody > tr:last-child > td,
+table.dataTable.datatable-rounded > tfoot > tr:last-child > th,
+table.dataTable.datatable-rounded > tfoot > tr:last-child > td {
+    border-bottom-width: 0;
 }

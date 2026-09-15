@@ -22,6 +22,7 @@ const props = defineProps({
   batches: {type: Array, default: () => ([])},
   tabs: {type: Array, default: () => ([])},
   columns: {type: Array, default: () => ([])},
+  rounded: {type: Boolean, default: true},
 });
 
 const emit = defineEmits(['add', 'batch', 'delete', 'clickRow', 'ready']);
@@ -532,6 +533,7 @@ defineExpose({
                    :class="[
                        {
                            'datatable-selectable': !!options?.select,
+                           'datatable-rounded': rounded,
                        },
                        'table-hover',
                        options?.select?.style ? 'datatable-selectable-' + options?.select?.style : ''
