@@ -280,7 +280,7 @@ const datatableOptions = ref({
     ...(props.options.buttons || []),
     {
       text: '<i class="fa-light fa-arrows-rotate lh-sm"></i>',
-      className: 'rounded-5 ms-1 datatable-btn-reload',
+      className: 'rounded-5 ms-1 btn-text theme-inverse datatable-btn-reload',
       action: (e, dt) => dt.ajax.reload(),
     },
   ],
