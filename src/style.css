@@ -320,7 +320,7 @@ div.dtsp-searchPane div.dt-container div.dt-scroll {
 
 .datatable-btn-reload {
     background-color: transparent;
-    color: var(--bs-secondary var(--inverse-fg));
+    color: var(--bs-secondary, var(--inverse-fg));
     height: 40px;
     width: 40px;
 }
